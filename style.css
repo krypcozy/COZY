@@ -191,3 +191,23 @@ nav ul li a.active {
   opacity: 10;
   transform: translateY(10);
 }
+.container{
+  width: 90;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+@media(max-width:768px){
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
