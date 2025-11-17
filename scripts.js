@@ -113,5 +113,5 @@ const navMenu = document.querySelector("nav ul");
 if (menuIcon && navMenu) {
   menuIcon.addEventListener("click", () => {
     navMenu.classList.toggle("open");
-  });
+  });
 }

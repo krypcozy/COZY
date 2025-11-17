@@ -277,13 +277,13 @@ footer {
 
 /* Fade-in animation */
 .section {
-  opacity: 5;
+  opacity: 2;
   transform: translateY(40px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .section.visible {
-  opacity: 10;
+  opacity: 5;
   transform: translateY(0);
 }
 
