@@ -29,9 +29,8 @@ window.addEventListener("scroll", () => {
       scrollPos < sec.offsetTop + sec.offsetHeight
     ) {
       navLinks.forEach(link => link.classList.remove("active"));
-      const activeLink = 
-      document.querySelector(nav ul li 
-      a[href="#${sec.id}"]
+      const activeLink = document.querySelector(
+        nav ul li a[href="#${sec.id}"]
       );
       if (activeLink) {
         activeLink.classList.add("active");
