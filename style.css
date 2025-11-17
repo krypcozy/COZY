@@ -198,4 +198,133 @@ nav ul li a.active {
 /* Proof of work */
 .proof-gallery {
   display: flex;
-  jus
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.proof-item {
+  background: radial-gradient(circle at 10% 0%, rgba(0, 240, 255, 0.18), #1a2236);
+  border-radius: 16px;
+  overflow: hidden;
+  width: 260px;
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  box-shadow: 0 0 24px rgba(0, 240, 255, 0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.proof-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.5);
+}
+
+.proof-item img {
+  width: 100%;
+  display: block;
+}
+
+.proof-item p {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Contact */
+.contact p {
+  max-width: 600px;
+  margin: 0 auto 10px;
+}
+
+.contact ul {
+  list-style: none;
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: left;
+  background: rgba(10, 15, 30, 0.9);
+  border-radius: 16px;
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  box-shadow: 0 0 22px rgba(0, 240, 255, 0.2);
+  padding: 16px 18px;
+}
+
+.contact li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.contact a {
+  color: #00f0ff;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.7);
+}
+
+.contact a:hover {
+  color: #ff007a;
+  text-shadow: 0 0 12px rgba(255, 0, 122, 0.85);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #111827;
+  padding: 20px;
+  font-size: 14px;
+  color: #aaa;
+  border-top: 1px solid rgba(0, 240, 255, 0.18);
+  box-shadow: 0 -8px 24px rgba(0, 240, 255, 0.18);
+}
+
+/* Fade-in animation */
+.section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll to top button tweaks */
+#scrollTopBtn {
+  box-shadow: 0 0 16px rgba(0, 240, 255, 0.7);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  header {
+    padding: 10px 15px;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: #111827;
+    width: 220px;
+    flex-direction: column;
+    padding: 10px 0;
+    display: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(0, 240, 255, 0.25);
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .home p {
+    padding: 0 10px;
+  }
