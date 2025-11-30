@@ -30,7 +30,7 @@ window.addEventListener("scroll", () => {
     ) {
       navLinks.forEach(link => link.classList.remove("active"));
       const activeLink = document.querySelector(
-        nav ul li a[href="#${sec.id}"]
+        'nav ul li a[href="#${sec.id}"]'
       );
       if (activeLink) {
         activeLink.classList.add("active");
@@ -113,5 +113,5 @@ const navMenu = document.querySelector("nav ul");
 if (menuIcon && navMenu) {
   menuIcon.addEventListener("click", () => {
     navMenu.classList.toggle("open");
-  });
+  });
 }
